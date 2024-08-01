@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import { Sequelize } from 'sequelize';
+import { Sequelize } from 'sequelize-typescript';
 dotenv.config();
 
 // eslint-disable-next-line no-undef
