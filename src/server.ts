@@ -15,5 +15,10 @@ async function connectDB() {
 	}
 }
 connectDB();
+
+// Instancia de express
 export const server: Express = express();
+
+// Leer datos de formulario
+server.use(express.json());
 server.use('/api/products', router);
