@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES2020", // Objetivo de compilación: versión de JavaScript a la que se compilará
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
     "lib": [
       "ESNext"
     ],
-    "module": "commonjs", // Módulo utilizado: CommonJS (compatible con Node.js)
+    "module": "NodeNext", // Módulo utilizado: CommonJS (compatible con Node.js)
     "outDir": "./dist", // Directorio de salida para los archivos compilados
     "rootDir": "./src", // Directorio raíz de tu código fuente
     "strict": false,
@@ -12,7 +13,9 @@
     "sourceMap": true, // Habilita todas las verificaciones estrictas de TypeScript
     "esModuleInterop": true, // Habilita la interoperabilidad entre módulos ES y CommonJS
     "skipLibCheck": true, // Omite la verificación de tipos en archivos de declaración
-    "forceConsistentCasingInFileNames": true // Fuerza consistencia en el uso de mayúsculas y minúsculas en los nombres de archivo
+    "forceConsistentCasingInFileNames": true, // Fuerza consistencia en el uso de mayúsculas y minúsculas en los nombres de archivo
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": [
     "src/**/*.ts" // Incluye todos los archivos TypeScript en el directorio src
